@@ -10,6 +10,19 @@ $app->post("/", function($request, $response, $args) {
     return $this->view->render($response, 'ok.twig');
   }
   else {
-    return $this->view->render($response, 'fail.twig', ["msg"=> $res["error"]]);
+
+    switch($res["error"])
+    {
+      case "already_in_team":
+        $errorMSG = "You are already part of this Team.";
+        break;
+      case "user_disabled":
+        $errorMSG = "Your Account is disabled.";
+        break;
+      default:
+        $errorMSG = $res["error"];
+        break;
+    }
+    return $this->view->render($response, 'fail.twig', ["msg"=> $errorMSG]);
   }
 });
