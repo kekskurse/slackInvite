@@ -1,0 +1,3 @@
+<?php
+$slack["teamname"] = "myslackteam";
+$slack["apiToken"] = "xoxp-";

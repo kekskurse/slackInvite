@@ -1,0 +1,12 @@
+{
+	"name": "ssp-app",
+	"version": "1.0.0",
+	"dependencies": {
+		"bootstrap": "latest",
+		"components-font-awesome": "latest",
+		"noty":"latest",
+		"sweetalert":"latest",
+		"switchery":"latest",
+		"gridstack":"latest"
+	}
+}

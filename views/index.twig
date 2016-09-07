@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Slack Invite</title>
+<link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<style type="text/css">
+.row{
+  margin-top:20%;
+}
+.invite{
+  background: rgba(255,255,255,0.9);
+  border: 1px solid black;
+}
+label {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8 invite">
+  <center><h1>Slack Invite</h1></center>
+  <form method="post">
+    <label>Firstname</label>
+    <input name="firstname" class="form-control">
+    <label>E-Mail Address</label>
+    <input name="mail" class="form-control">
+    <br>
+    <input type="submit" class="btn btn-success" style="width:100%" value="Get a Invite">
+  </form>
+</div>
+</div>
+</div>
+<script language="javascript">
+$.backstretch("{{ base_url() }}/img/hello-1502369.png");
+</script>
+</body>
+<html>
